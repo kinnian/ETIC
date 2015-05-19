@@ -61,7 +61,7 @@
         <!-- THE EYE -->
 
         <div id="eye">
-            <li><a href="#frame1" id="button_frame1" class="button" onclick="javascript:show('frame1');">Test</a></li>
+            <a href="#frame1" id="button_frame1" class="button" onclick="javascript:show('frame1');hide('eye');">Test</a>
         </div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -71,6 +71,9 @@
 
 		<div id="frame1" class="frame">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl. Phasellus quis nulla sit amet leo pretium tincidunt. Quisque eleifend augue quis urna. Curabitur rhoncus quam ac odio. In a nisi et purus fermentum aliquet. Donec sed leo aliquet lacus sollicitudin rhoncus. Duis ultricies euismod odio. Suspendisse potenti. Cras interdum, diam quis porta interdum, elit urna tincidunt ipsum, quis pharetra sem dui ac tortor. Cras lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum. Aliquam volutpat turpis at ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+            <p onclick="javascript:zoomIn('frame1');">Zoom</p>
+            <p onclick="javascript:zoomOut('frame1');">Dézoom</p>
+            <a href="#eye" id="button_eye" class="button" onclick="javascript:hide('frame1');show('eye');">Retour</a>
 		</div>
 
 <!-- ____________________________________________________________________________________________________________ -->
