@@ -14,4 +14,16 @@ footer.frame {
   font-size: 0.8em;
 }
 
+#frame1 {
+	width: 27%;
+	text-align: justify;
+	margin: 3%;
+}
 
+#eye {
+	position:absolute;
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-bottom: 20%;
+	margin-top: 50%;
+}
