@@ -18,6 +18,7 @@ footer.frame {
 	width: 27%;
 	text-align: justify;
 	margin: 3%;
+	opacity: 0;
 }
 
 #eye {
