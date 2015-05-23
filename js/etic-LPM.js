@@ -305,8 +305,7 @@ $("#button_frame6").click(function(){
 	$("#frame6").animate({
 		marginTop: "10%",
 		marginLeft: "50%",
-		opacity: 1,
-		scrollTop: $("#frame6").offset().top
+		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
@@ -363,4 +362,34 @@ $("#frame6to7").click(function(){
 	}, 1000, function(){
 		//Animation complete
 	});
+});
+
+
+// ------------------------- FRAME 7 ------------------------------------- //
+
+
+
+//return to frame 5
+$("#return_frame5").click(function() {
+	document.getElementById("frame7").style.display = "none";
+	$("#frame5").animate({
+		marginTop: "10%",
+		opacity: 1
+	}, 500, function(){
+		//Animation complete
+	});
+
+});
+
+//return to frame 6
+$("#return_frame6").click(function() {
+	document.getElementById("frame7").style.display = "none";
+	$("#frame6").animate({
+		marginTop: "10%",
+		marginLeft: "50%",
+		opacity: 1
+	}, 500, function(){
+		//Animation complete
+	});
+
 });
