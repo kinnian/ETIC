@@ -14,8 +14,7 @@ $("#button_frame1").click(function(){
 	$("#frame1").animate({
 		marginLeft: "10%",
 		marginTop: "5%",
-		opacity: 1,
-		scrollTop: $("#frame1").offset().top
+		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
@@ -63,8 +62,7 @@ $("#button_frame2").click(function(){
 	});
 	$("#frame2").animate({
 		marginTop: "5%",
-		opacity: 1,
-		scrollTop: $("#frame2").offset().top
+		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
@@ -113,8 +111,7 @@ $("#button_frame3").click(function(){
 	$("#frame3").animate({
 		marginTop: "5%",
 		marginLeft: "50%",
-		opacity: 1,
-		scrollTop: $("#frame3").offset().top
+		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
@@ -166,8 +163,7 @@ $("#button_frame4").click(function(){
 	$("#frame4").animate({
 		marginLeft: "10%",
 		marginTop: "10%",
-		opacity: 1,
-		scrollTop: $("#frame4").offset().top
+		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
@@ -202,6 +198,29 @@ $("#button_eye4").click(function(){
 	document.getElementById("frame4").style.display = "none";
 });
 
+//display conclusion
+$("#frame4to7").click(function(){
+	document.getElementById("frame7").style.display = "block";
+	$("#frame7").animate({
+		marginTop: "0%",
+		opacity: 1
+	}, 500, function() {
+		//Animation complete
+	});
+	$("#frame4").animate({
+		opacity: 0,
+		marginTop: "5%",
+		marginLeft: "5%"
+	}, 500, function(){
+		//Animation complete
+	});
+	$('html, body').stop().animate({
+		scrollTop: $("#frame7").offset().top
+	}, 1000, function(){
+		//Animation complete
+	});
+});
+
 
 // ------------------------- FRAME 5 ------------------------------------- //
 
@@ -216,8 +235,7 @@ $("#button_frame5").click(function(){
 	});
 	$("#frame5").animate({
 		marginTop: "10%",
-		opacity: 1,
-		scrollTop: $("#frame5").offset().top
+		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
@@ -250,6 +268,27 @@ $("#button_eye5").click(function(){
 	document.getElementById("frame5").style.display = "none";
 });
 
+//display conclusion
+$("#frame5to7").click(function(){
+	document.getElementById("frame7").style.display = "block";
+	$("#frame7").animate({
+		marginTop: "0%",
+		opacity: 1
+	}, 500, function() {
+		//Animation complete
+	});
+	$("#frame5").animate({
+		opacity: 0,
+		marginTop: "5%"
+	}, 500, function(){
+		//Animation complete
+	});
+	$('html, body').stop().animate({
+		scrollTop: $("#frame7").offset().top
+	}, 1000, function(){
+		//Animation complete
+	});
+});
 
 // ------------------------- FRAME 6 ------------------------------------- //
 
@@ -300,4 +339,28 @@ $("#button_eye6").click(function(){
 		//Animation complete
 	});
 	document.getElementById("frame6").style.display = "none";
+});
+
+//display conclusion
+$("#frame6to7").click(function(){
+	document.getElementById("frame7").style.display = "block";
+	$("#frame7").animate({
+		marginTop: "0%",
+		opacity: 1
+	}, 500, function() {
+		//Animation complete
+	});
+	$("#frame6").animate({
+		opacity: 0,
+		marginTop: "5%",
+		marginLeft: "60%"
+	}, 500, function(){
+		//Animation complete
+	});
+
+	$('html, body').stop().animate({
+		scrollTop: $("#frame7").offset().top
+	}, 1000, function(){
+		//Animation complete
+	});
 });
