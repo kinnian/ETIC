@@ -16,65 +16,45 @@
 	cursor: pointer;
 }
 
-#frame1 {
+.frame {
+	position: absolute;
 	width: 35%;
 	text-align: justify;
-	margin: 3%;
 	opacity: 0;
 	display: none;
 }
 
+#frame1 {
+	margin: 3%;
+}
+
 #frame2 {
-	width: 35%;
-	text-align: justify;
 	margin-top: 3%;
-	opacity: 0;
 	margin-left: 30%;
-	display: none;
 }
 
 
 #frame3 {
-	width: 35%;
-	text-align: justify;
 	margin-top: 3%;
-	opacity: 0;
 	margin-left: 60%;
-	display: none;
 }
 
 #frame4 {
-	width: 35%;
-	text-align: justify;
 	margin-left: 3%;
-	margin-top: 30%;
-	opacity: 0;
-	display: none;
+	margin-top: 12%;
 }
 
 #frame5 {
-	width: 35%;
-	text-align: justify;
-	margin-top: 30%;
-	opacity: 0;
+	margin-top: 12%;
 	margin-left: 30%;
-	display: none;
 }
 
 #frame6 {
-	width: 35%;
-	text-align: justify;
-	margin-top: 30%;
-	opacity: 0;
+	margin-top: 12%;
 	margin-left: 60%;
-	display: none;
 }
 
 #frame7 {
-	width: 35%;
-	text-align: justify;
-	margin-top: 30%;
-	opacity: 0;
-	display: none;
+	margin-top: 20%;
 	margin-left: 30%;
 }

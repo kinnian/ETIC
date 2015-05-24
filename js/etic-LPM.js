@@ -6,14 +6,14 @@ $("#button_frame1").click(function(){
 	document.getElementById("frame1").style.display = "block";
 	$("#eye").animate({
 		opacity: 0,
-		marginLeft: "50%",
-		marginTop: "30%"
+		marginLeft: "+=10%",
+		marginTop: "+=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame1").animate({
-		marginLeft: "10%",
-		marginTop: "5%",
+		marginLeft: "+=10%",
+		marginTop: "+=5%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
@@ -33,19 +33,23 @@ $("#button_frame1").hover(
 //return to the eye element; hide frame1
 $("#button_eye1").click(function(){
 	$("#frame1").animate({
-		margin: "3%",
+		marginLeft: "-=10%",
+		marginTop: "-=5%",
 		opacity: 0
 	}, 500, function() {
-		//Animation complete
+		document.getElementById("frame1").style.display = "none";
 	});
 	$("#eye").animate({
 		opacity : 1,
-		marginLeft: "35%",
-		marginTop: "10%"
+		marginLeft: "-=10%",
+		marginTop: "-=10%"
 	}, 500, function() {
-		//Animation complete
+		$('html, body').animate({
+			scrollTop: $("#eye").offset().top
+		}, 1000, function(){
+			//Animation complete
+		});
 	});
-	document.getElementById("frame1").style.display = "none";
 });
 
 
@@ -56,12 +60,12 @@ $("#button_frame2").click(function(){
 	document.getElementById("frame2").style.display = "block";
 	$("#eye").animate({
 		opacity: 0,
-		marginTop: "30%"
+		marginTop: "+=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame2").animate({
-		marginTop: "5%",
+		marginTop: "+=5%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
@@ -81,18 +85,17 @@ $("#button_frame2").hover(
 //return to the eye element; hide frame2
 $("#button_eye2").click(function(){
 	$("#frame2").animate({
-		marginTop: "3%",
+		marginTop: "-=5%",
 		opacity: 0
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#eye").animate({
 		opacity : 1,
-		marginTop: "10%"
+		marginTop: "-=10%"
 	}, 500, function() {
-		//Animation complete
+		document.getElementById("frame2").style.display = "none";
 	});
-	document.getElementById("frame2").style.display = "none";
 });
 
 
@@ -103,14 +106,14 @@ $("#button_frame3").click(function(){
 	document.getElementById("frame3").style.display = "block";
 	$("#eye").animate({
 		opacity: 0,
-		marginTop: "30%",
-		marginLeft: "20%"
+		marginTop: "+=10%",
+		marginLeft: "-=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame3").animate({
-		marginTop: "5%",
-		marginLeft: "50%",
+		marginTop: "+=5%",
+		marginLeft: "-=10%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
@@ -131,19 +134,18 @@ $("#button_frame3").hover(
 $("#button_eye3").click(function(){
 	$("#eye").animate({
 		opacity : 1,
-		marginTop: "10%",
-		marginLeft: "35%"
+		marginTop: "-=10%",
+		marginLeft: "+=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame3").animate({
-		marginTop: "3%",
-		marginLeft: "70%",
+		marginTop: "-=5%",
+		marginLeft: "+=10%",
 		opacity: 0
 	}, 500, function() {
-		//Animation complete
+		document.getElementById("frame3").style.display = "none";
 	});
-	document.getElementById("frame3").style.display = "none";
 });
 
 
@@ -155,16 +157,21 @@ $("#button_frame4").click(function(){
 	document.getElementById("frame4").style.display = "block";
 	$("#eye").animate({
 		opacity: 0,
-		marginLeft: "50%",
-		marginTop: "5%"
+		marginLeft: "+=10%",
+		marginTop: "-=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame4").animate({
-		marginLeft: "10%",
-		marginTop: "10%",
+		marginLeft: "+=10%",
+		marginTop: "-=5%",
 		opacity: 1
 	}, 500, function() {
+		//Animation complete
+	});
+	$('html, body').stop().animate({
+		scrollTop: $("#frame4").offset().top
+	}, 1000, function(){
 		//Animation complete
 	});
 });
@@ -182,37 +189,41 @@ $("#button_frame4").hover(
 //return to the eye element; hide frame4
 $("#button_eye4").click(function(){
 	$("#frame4").animate({
-		marginLeft: "3%",
-		marginTop: "30%",
+		marginLeft: "-=10%",
+		marginTop: "+=5%",
 		opacity: 0
 	}, 500, function() {
-		//Animation complete
+		document.getElementById("frame4").style.display = "none";
 	});
 	$("#eye").animate({
 		opacity : 1,
-		marginLeft: "35%",
-		marginTop: "10%"
+		marginLeft: "-=10%",
+		marginTop: "+=10%"
 	}, 500, function() {
 		//Animation complete
 	});
-	document.getElementById("frame4").style.display = "none";
+	$('html, body').stop().animate({
+		scrollTop: $("#eye").offset().top
+	}, 1000, function(){
+		//Animation complete
+	});
 });
 
 //display conclusion
 $("#frame4to7").click(function(){
 	document.getElementById("frame7").style.display = "block";
 	$("#frame7").animate({
-		marginTop: "0%",
+		marginTop: "-=10%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame4").animate({
 		opacity: 0,
-		marginTop: "5%",
-		marginLeft: "5%"
+		marginTop: "-=5%",
+		marginLeft: "-=10%"
 	}, 500, function(){
-		//Animation complete
+		document.getElementById("frame4").style.display = "none";
 	});
 	$('html, body').stop().animate({
 		scrollTop: $("#frame7").offset().top
@@ -229,12 +240,12 @@ $("#button_frame5").click(function(){
 	document.getElementById("frame5").style.display = "block";
 	$("#eye").animate({
 		opacity: 0,
-		marginTop: "5%"
+		marginTop: "-=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame5").animate({
-		marginTop: "10%",
+		marginTop: "-=5%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
@@ -254,34 +265,33 @@ $("#button_frame5").hover(
 //return to the eye element; hide frame5
 $("#button_eye5").click(function(){
 	$("#frame5").animate({
-		marginTop: "30%",
+		marginTop: "+=5%",
 		opacity: 0
 	}, 500, function() {
-		//Animation complete
+		document.getElementById("frame5").style.display = "none";
 	});
 	$("#eye").animate({
 		opacity : 1,
-		marginTop: "10%"
+		marginTop: "+=10%"
 	}, 500, function() {
 		//Animation complete
 	});
-	document.getElementById("frame5").style.display = "none";
 });
 
 //display conclusion
 $("#frame5to7").click(function(){
 	document.getElementById("frame7").style.display = "block";
 	$("#frame7").animate({
-		marginTop: "0%",
+		marginTop: "-=5%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame5").animate({
 		opacity: 0,
-		marginTop: "5%"
+		marginTop: "-=5%"
 	}, 500, function(){
-		//Animation complete
+		document.getElementById("frame5").style.display = "none";
 	});
 	$('html, body').stop().animate({
 		scrollTop: $("#frame7").offset().top
@@ -297,14 +307,14 @@ $("#button_frame6").click(function(){
 	document.getElementById("frame6").style.display = "block";
 	$("#eye").animate({
 		opacity: 0,
-		marginTop: "5%",
-		marginLeft: "20%"
+		marginTop: "-=10%",
+		marginLeft: "-=10%"
 	}, 500, function() {
 		//Animation complete
 	});
 	$("#frame6").animate({
-		marginTop: "10%",
-		marginLeft: "50%",
+		marginTop: "-=5%",
+		marginLeft: "-=10%",
 		opacity: 1
 	}, 500, function() {
 		//Animation complete
@@ -324,37 +334,35 @@ $("#button_frame6").hover(
 //return to the eye element; hide frame6
 $("#button_eye6").click(function(){
 	$("#frame6").animate({
-		marginTop: "30%",
-		marginLeft: "70%",
+		marginTop: "+=5%",
+		marginLeft: "+=10%",
 		opacity: 0
 	}, 500, function() {
-		//Animation complete
+		document.getElementById("frame6").style.display = "none";
 	});
 	$("#eye").animate({
 		opacity : 1,
-		marginTop: "10%",
-		marginLeft: "35%"
+		marginTop: "+=10%",
+		marginLeft: "+=10%"
 	}, 500, function() {
 		//Animation complete
 	});
-	document.getElementById("frame6").style.display = "none";
 });
 
 //display conclusion
 $("#frame6to7").click(function(){
 	document.getElementById("frame7").style.display = "block";
 	$("#frame7").animate({
-		marginTop: "0%",
+		marginTop: "-=5%",
 		opacity: 1
 	}, 500, function() {
-		//Animation complete
 	});
 	$("#frame6").animate({
 		opacity: 0,
-		marginTop: "5%",
-		marginLeft: "60%"
+		marginTop: "-=5%",
+		marginLeft: "+=10%"
 	}, 500, function(){
-		//Animation complete
+		document.getElementById("frame6").style.display = "none";
 	});
 
 	$('html, body').stop().animate({
@@ -367,29 +375,57 @@ $("#frame6to7").click(function(){
 
 // ------------------------- FRAME 7 ------------------------------------- //
 
-
-
-//return to frame 5
-$("#return_frame5").click(function() {
-	document.getElementById("frame7").style.display = "none";
-	$("#frame5").animate({
-		marginTop: "10%",
+//return to frame 4
+$("#return_frame4").click(function() {
+	document.getElementById("frame4").style.display ="block";
+	$("#frame4").animate({
+		marginTop: "+=5%",
+		marginLeft: "+=10%",
 		opacity: 1
 	}, 500, function(){
 		//Animation complete
+	});
+	$("#frame7").animate({
+		marginTop: "+=5%",
+		opacity: 0
+	}, 500, function() {
+		document.getElementById("frame7").style.display = "none";
+	});
+});
+
+//return to frame 5
+$("#return_frame5").click(function() {
+	document.getElementById("frame5").style.display = "block";
+	$("#frame5").animate({
+		marginTop: "+=5%",
+		opacity: 1
+	}, 500, function(){
+		//Animation complete
+	});
+	$("#frame7").animate({
+		marginTop: "+=5%",
+		opacity: 0
+	}, 500, function() {
+		document.getElementById("frame7").style.display = "none";
 	});
 
 });
 
 //return to frame 6
 $("#return_frame6").click(function() {
-	document.getElementById("frame7").style.display = "none";
+	document.getElementById("frame6").style.display = "block";
 	$("#frame6").animate({
-		marginTop: "10%",
-		marginLeft: "50%",
+		marginTop: "+=5%",
+		marginLeft: "-=10%",
 		opacity: 1
 	}, 500, function(){
 		//Animation complete
+	});
+	$("#frame7").animate({
+		marginTop: "+=5%",
+		opacity: 0
+	}, 500, function() {
+		document.getElementById("frame7").style.display = "none";
 	});
 
 });
