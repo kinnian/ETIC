@@ -2,6 +2,7 @@ body {
 	background-image: url(background.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-attachment: fixed;
 	color: #FFFFFF;
 	font-family: 'Roboto', sans-serif;
 
@@ -13,9 +14,50 @@ body {
 	vertical-align: top;
 	width: 90%;
 	margin-left: 9%;
+	height: 90%;
+	margin-top: 3%;
 	color: #1F5A98;
 }
 
+.circle {
+	width: 90%;
+}
+
+#description1 {
+	position: absolute;
+	margin-top: -9%;
+	margin-left: 3%;
+}
+
+#description2 {
+	position: absolute;
+	margin-top: -9%;
+	margin-left: 9.5%;
+}
+
+#description3 {
+	position: absolute;
+	margin-top: -9%;
+	margin-left: 3%;
+}
+
+#description4 {
+	position: absolute;
+	margin-top: -12%;
+	margin-left: 3%;
+}
+
+#description5 {
+	position: absolute;
+	margin-top: -8%;
+	margin-left: 6%;
+}
+
+#description6 {
+	position: absolute;
+	margin-top: -13%;
+	margin-left: 6%;
+}
 
 
 .button {
@@ -81,26 +123,26 @@ body {
 }
 
 #button_frame2 {
-	margin-left: -11%;
+	margin-left: -12%;
 	margin-top: 0%;
 }
 
 #button_frame3 {
-	margin-left: -11%;
+	margin-left: -13%;
 	margin-top: 4%;
 }
 
 #button_frame4 {
 	margin-left: 20%;
-	margin-top: -6%;
+	margin-top: -4%;
 }
 
 #button_frame5 {
-	margin-left: -11%;
-	margin-top: 3%;
+	margin-left: -12%;
+	margin-top: 4.5%;
 }
 
 #button_frame6 {
-	margin-left: -11%;
-	margin-top: -6%;
+	margin-left: -13%;
+	margin-top: -4%;
 }

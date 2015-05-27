@@ -105,19 +105,10 @@ $("#button_frame1").click(function(){
 	showFrame("frame1", "#frame1", "+=10%", "+=5%", "+=10%");
 });
 
-//description of frame1 when hover of eye element
-$("#button_frame1").hover(
-	function()
-	{
-		    $(this).prepend( $( "<span>Arbre des débats</span>" ) );
-  	}, function() {
-    $( this ).find( "span:last" ).remove();
-  	}
-);
 
 //return to the eye element; hide frame1
 $("#button_eye1").click(function(){
-	reinitializeEye("10%", "19%");
+	reinitializeEye("13%", "19%");
 	hideFrame("frame1", "#frame1", "-=10%", "-=5%", "-=10%");
 });
 
@@ -129,19 +120,9 @@ $("#button_frame2").click(function(){
 	showFrame("frame2", "#frame2", "+=10%", "+=5%", "+=0%");
 });
 
-//description of frame2 when hover of eye element
-$("#button_frame2").hover(
-	function()
-	{
-	    $( this ).prepend( $( "<span>Frise</span>" ) );
-  	}, function() {
-    $( this ).find( "span:last" ).remove();
-  	}
-);
-
 //return to the eye element; hide frame2
 $("#button_eye2").click(function(){
-	reinitializeEye("10%", "9%");
+	reinitializeEye("13%", "9%");
 	hideFrame("frame2", "#frame2", "-=10%", "-=5%", "+=0%");
 });
 
@@ -153,19 +134,10 @@ $("#button_frame3").click(function(){
 	showFrame("frame3", "#frame3", "+=10%", "+=5%", "-=10%");
 });
 
-//description of frame2 when hover of eye element
-$("#button_frame3").hover(
-	function()
-	{
-	    $( this ).prepend( $( "<span>Carte des acteurs</span>" ) );
-  	}, function() {
-    $( this ).find( "span:last" ).remove();
-  	}
-);
 
 //return to the eye element; hide frame3
 $("#button_eye3").click(function(){
-	reinitializeEye("10%", "-1%");
+	reinitializeEye("13%", "-1%");
 	hideFrame("frame3", "#frame3", "-=10%", "-=5%", "+=10%");
 });
 
@@ -178,19 +150,10 @@ $("#button_frame4").click(function(){
 	showFrame("frame4", "#frame4", "-=10%", "-=5%", "+=10%");
 });
 
-//description of frame4 when hover of eye element 4
-$("#button_frame4").hover(
-	function()
-	{
-	    $(this).prepend( $( "<span>Argument 1</span>" ) );
-  	}, function() {
-    $( this ).find( "span:last" ).remove();
-  	}
-);
 
 //return to the eye element; hide frame4
 $("#button_eye4").click(function(){
-	reinitializeEye("-10%", "19%");
+	reinitializeEye("-7%", "19%");
 	hideFrame("frame4", "#frame4", "+=10%", "+=5%", "-=10%");
 });
 
@@ -207,19 +170,9 @@ $("#button_frame5").click(function(){
 	showFrame("frame5", "#frame5", "-=10%", "-=5%", "+=0%");
 });
 
-//description of frame5 when hover of eye element
-$("#button_frame5").hover(
-	function()
-	{
-	    $( this ).prepend( $( "<span>Argument 2</span>" ) );
-  	}, function() {
-    $( this ).find( "span:last" ).remove();
-  	}
-);
-
 //return to the eye element; hide frame5
 $("#button_eye5").click(function(){
-	reinitializeEye("-10%", "9%");
+	reinitializeEye("-7%", "9%");
 	hideFrame("frame5", "#frame5", "+=10%", "+=10%", "+=0%");
 });
 
@@ -235,19 +188,10 @@ $("#button_frame6").click(function(){
 	showFrame("frame6", "#frame6", "-=10%", "-=5%", "-=10%");
 });
 
-//description of frame6 when hover of eye element
-$("#button_frame6").hover(
-	function()
-	{
-	    $( this ).prepend( $( "<span>Argument 3</span>" ) );
-  	}, function() {
-    $( this ).find( "span:last" ).remove();
-  	}
-);
 
 //return to the eye element; hide frame6
 $("#button_eye6").click(function(){
-	reinitializeEye("-10%", "-1%");
+	reinitializeEye("-7%", "-1%");
 	hideFrame("frame6", "#frame6", "+=10%", "+=5%", "+=10%");
 });
 
