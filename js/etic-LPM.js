@@ -2,15 +2,13 @@ $(window).load(function(){
 	var windowWidth = window.innerWidth, windowHeight = window.innerHeight, eyeSize, circleSize;
 	eyeSize = windowWidth * 90/100; 
 	$("#eye").width(eyeSize);
-	$(body).background.size = windowWidth windowHeight;
-
 });
 
 
 
 
 showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
-	document.getElementById(id1).style.display = "block";
+	document.getElementById(id1).style.display = "inline-block";
 	$("#eye").animate({
 		opacity: 0,
 		marginLeft: varLeft,
@@ -18,6 +16,7 @@ showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 	}, 500, function() {
 		document.getElementById("eye").style.marginLeft = "9%";
 		document.getElementById("eye").style.marginTop = "0%";
+		document.getElementById("eye").style.display = "none";
 	});
 	$(id2).animate({
 		marginLeft: varLeft,
@@ -30,6 +29,7 @@ showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 
 
 hideFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
+	document.getElementById("eye").style.display = "inline-block";
 	$(id2).animate({
 		marginLeft: varLeft,
 		marginTop: varTopFrame,
@@ -98,7 +98,7 @@ hideConclusion = function(id1, id2, varLeft){
 	}, 500, function() {
 		document.getElementById("frame7").style.display = "none";
 		document.getElementById("frame7").style.marginTop = "20%";
-		document.getElementById("frame7").style.marginLeft = "30%";
+		document.getElementById("frame7").style.marginLeft = "12%";
 	});
 };
 
@@ -106,6 +106,8 @@ reinitializeFrame = function(id, varTop, varLeft){
 	document.getElementById(id).style.marginTop = varTop;
 	document.getElementById(id).style.marginLeft = varLeft;
 };
+
+
 
 
 // ------------------------- FRAME 1 ------------------------------------- //
@@ -222,13 +224,13 @@ $("#return_frame4").click(function() {
 
 //return to frame 5
 $("#return_frame5").click(function() {
-	reinitializeFrame("frame5", "2%", "30%");
+	reinitializeFrame("frame5", "2%", "12%");
 	hideConclusion("frame5", "#frame5", "+=0%");
 
 });
 
 //return to frame 6
 $("#return_frame6").click(function() {
-	reinitializeFrame("frame6", "2%", "60%");
+	reinitializeFrame("frame6", "2%", "22%");
 	hideConclusion("frame6", "#frame6", "-=10%");
 });
