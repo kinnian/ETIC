@@ -1,12 +1,3 @@
-$(window).load(function(){
-	var windowWidth = window.innerWidth, windowHeight = window.innerHeight, eyeSize, circleSize;
-	eyeSize = windowWidth * 90/100; 
-	$("#eye").width(eyeSize);
-});
-
-
-
-
 showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 	document.getElementById(id1).style.display = "inline-block";
 	$("#eye").animate({

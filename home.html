@@ -10,6 +10,36 @@
         <meta name="viewport" content="width=device-width">
 
         <!--(if target dev)><!-->
+        <style type="text/css">
+            @font-face {
+                font-family: 'steelfish_rg';
+                src: url('fonts/steelfish_rg.eot');
+                src: url('fonts/steelfish_rg.eot') format('embedded-opentype'),
+                 url('fonts/steelfish_rg.woff2') format('woff2'),
+                 url('fonts/steelfish_rg.woff') format('woff'),
+                 url('fonts/steelfish_rg.ttf') format('truetype'),
+                 url('fonts/steelfish_rg.svg#steelfish_rg') format('svg');
+            }
+            @font-face {
+                font-family: 'steelfish_rg_it';
+                src: url('fonts/steelfish_rg_it.eot');
+                src: url('fonts/steelfish_rg_it.eot') format('embedded-opentype'),
+                 url('fonts/steelfish_rg_it.woff2') format('woff2'),
+                 url('fonts/steelfish_rg_it.woff') format('woff'),
+                 url('fonts/steelfish_rg_it.ttf') format('truetype'),
+                 url('fonts/steelfish_rg_it.svg#steelfish_rg_it') format('svg');
+            }
+            @font-face {    
+            font-family: 'steelfish_outline';
+            src: url('fonts/steelfish_outline.eot');
+            src: url('fonts/steelfish_outline.eot') format('embedded-opentype'),
+             url('fonts/steelfish_outline.woff2') format('woff2'),
+             url('fonts/steelfish_outline.woff') format('woff'),
+             url('fonts/steelfish_outline.ttf') format('truetype'),
+             url('fonts/steelfish_outline.svg#steelfish_outline') format('svg');
+            }
+
+        </style>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/home.css">
         <!--<!(endif)-->
@@ -33,19 +63,61 @@
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 
+<!-- ____________________________________________________________________________________________________________ -->
 
+
+        <!-- FRAME 0 -->
+
+
+        <div id="frame0">
+            <img id="info" src="images/info.png"/>
+        </div>
 <!-- ____________________________________________________________________________________________________________ -->
 
 
         <!-- THE EYE -->
 
         <div id="eye">
-            <div id="button_frame1" class="button"> <img class="circle" src="images/hautgauche.png"/><p id="description1">Arbre des débats</p></div>
-            <div id="button_frame2" class="button"> <img class="circle" src="images/hautmilieu.png"/><p id="description2">Frise chronologique</div>
-            <div id="button_frame3" class="button"> <img class="circle" src="images/hautdroite.png"/><p id="description3">Cartographie du web</p></div>
-            <div id="button_frame4" class="button"> <img class="circle" src="images/basgauche.png"/><p id="description4">Quelles données ?</p></div>
-            <div id="button_frame5" class="button"> <img class="circle" src="images/basmilieu.png"/><p id="description5">Pour quelles raisons ?</p></div>
-            <div id="button_frame6" class="button"> <img class="circle" src="images/basdroite.png"/><p id="description6">Existence et modalité de contrôle</p></div>
+            <img src="images/ecrans.jpg" id="screen"/>
+            <p id="title">LPM : SURVEILLANCE OU PROTECTION DU CITOYEN ?</p>
+            <div id="menu">
+                <div id="menu-title">
+                    <img src="images/menu.png"><p id="menu-title">MENU</p><img src="images/menu.png">
+                </div></br>
+                <div id="button_frame1" class="button"> 
+                    <img class="circle" src="images/rondmenu.png"/>
+                    <img src="images/marketing.png" class="deco"/>
+                    <p id="description1">ARBRE DES DEBATS</p>
+                </div>
+                <img src="images/menu-separation.png" class="separation"/>
+                <div id="button_frame2" class="button"> 
+                    <img class="circle" src="images/rondmenu.png"/>
+                    <img src="images/calendar.png" class="deco"/>
+                    <p id="description2">FRISE CHRONOLOGIQUE</p>
+                </div>
+                <img src="images/menu-separation.png" class="separation"/>
+                <div id="button_frame3" class="button"> 
+                    <img class="circle" src="images/rondmenu.png"/>
+                    <img src="images/map.png" class="deco"/>
+                    <p id="description3">CARTOGRAPHIE DU WEB</p></div></br>
+                <div id="button_frame4" class="button"> 
+                    <img class="circle" src="images/rondmenu.png"/>
+                    <img src="images/servers.png" class="deco"/>
+                    <p id="description4">QUELLES DONNEES ?</p>
+                </div>
+                <img src="images/menu-separation.png" class="separation"/>
+                <div id="button_frame5" class="button"> 
+                    <img class="circle" src="images/rondmenu.png"/>
+                    <img src="images/question.png" class="deco"/>
+                    <p id="description5">POUR QUELLES RAISONS ?</p>
+                </div>
+                <img src="images/menu-separation.png" class="separation"/>
+                <div id="button_frame6" class="button"> 
+                    <img class="circle" src="images/rondmenu.png"/>
+                    <img src="images/law.png" class="deco"/>
+                    <p id="description6">EXISTENCE ET MODALITE DE CONTRÔLE</p>
+                </div>
+            </div>
         </div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -199,7 +271,7 @@
 
 	 <!-- FOOTER -->
 
-        <footer class="frame">
+        <footer>
         </footer>
 
     <!-- some scripts -->
