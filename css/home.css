@@ -119,15 +119,38 @@ body {
 	font-weight: 100;
 	color: #55555b;
 	padding-bottom: 5%;
+	padding-top: 10%;
+}
+
+#spicynodesViewer {
+	margin-left: 10%;
+}
+
+#arbre-title {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -11%;
 }
 
 #frame2 {
 	margin-left: 10%;
 }
 
+#frise-title {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -11%;
+}
+
 
 #frame3 {
 	margin-left: 20%;
+}
+
+#carte-title {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -11%;
 }
 
 #carte {
@@ -136,7 +159,6 @@ body {
 
 #frame4 {
 	margin-top: 12%;
-	padding-top: 10%;
 }
 
 #donnees-title {
@@ -153,9 +175,11 @@ body {
 }
 
 #button_eye1 {
+	margin-left: 95%;
 }
 
 #button_eye2 {
+	margin-left: 48%;
 }
 
 #button_eye3 {
@@ -170,28 +194,69 @@ body {
 }
 
 #button_eye5 {
+	margin-left: 48%;
+}
+
+#frame5to7 {
+	margin-left: 48%;
 }
 
 #button_eye6 {
 }
 
+#return_frame5 {
+	margin-left: 40%;
+}
+
+#return_frame6 {
+	margin-left: 40%;
+}
+
 #frame5 {
 	margin-top: 12%;
 	margin-left: 10%;
-	padding-top: 10%;
+}
+
+#raisons-title {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -11%;
+}
+
+#raisons-image {
+	border: 2px solid #55555b;
+	width: 90%;
+	margin-left: 2%;
+	height: 300px;
 }
 
 #frame6 {
 	margin-top: 12%;
 	margin-left: 20%;
-	padding-top: 10%;
 }
 
+#modalite-title {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -11%;
+}
+
+#modalite-image {
+	border: 2px solid #55555b;
+	width: 90%;
+	margin-left: 2%;
+	height: 300px;
+}
 #frame7 {
 	margin-top: 20%;
 	margin-left: 10%;
 }
 
+#conclusion-title {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -11%;
+}
 
 #info {
 	position: absolute;

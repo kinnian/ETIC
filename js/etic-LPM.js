@@ -58,7 +58,11 @@ showConclusion = function(id1, id2, varLeft){
 		marginTop: "-=10%",
 		opacity: 1
 	}, 500, function() {
-		//Animation complete
+		$('html, body').stop().animate({
+			scrollTop: $("#frame7").offset().top
+		}, 1000, function(){
+			//Animation complete
+		});
 	});
 	$(id2).animate({
 		opacity: 0,
@@ -76,11 +80,6 @@ showConclusion = function(id1, id2, varLeft){
 		if (id1=="frame6") {			
 			document.getElementById(id1).style.marginLeft = "60%";
 		};
-	});
-	$('html, body').stop().animate({
-		scrollTop: $("#frame7").offset().top
-	}, 1000, function(){
-		//Animation complete
 	});
 };
 
