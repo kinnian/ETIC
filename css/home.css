@@ -7,8 +7,7 @@ body {
 
 #title {
 	font-family: 'steelfish_rg', sans-serif;
-	font-size: 5em;
-	border: 2px solid white;
+	font-size: 3.3em;
 	width: 80%;
 	color: white;
 	text-align: center;
@@ -16,7 +15,7 @@ body {
 	margin-left: auto;
 	position: relative;
 	z-index: 1;
-	margin-top: -35%;
+	margin-top: -33%;
 }
 
 #screen {
@@ -41,7 +40,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 0px;
 	margin-bottom: 40px;
 	color: white;
 	text-align: center;
@@ -56,49 +55,49 @@ body {
 
 .deco {
 	position: absolute;
-	margin-top: 3.5%;
-	margin-left: -9.5%;
+	margin-top: 50px;
+	margin-left: -125px;
 }
 
 #description1 {
 	position: absolute;
-	margin-top: -9%;
-	margin-left: 2%;
+	margin-top: -125px;
+	margin-left: 25px;
 	width: 10%;
 }
 
 #description2 {
 	position: absolute;
-	margin-top: -9.5%;
-	margin-left: 2%;
+	margin-top: -125px;
+	margin-left: 25px;
 	width: 10%;
 }
 
 #description3 {
 	position: absolute;
-	margin-top: -9%;
-	margin-left: 2%;
+	margin-top: -125px;
+	margin-left: 25px;
 	width: 10%;
 }
 
 #description4 {
 	position: absolute;
-	margin-top: -9%;
-	margin-left: 2%;
+	margin-top: -125px;
+	margin-left: 25px;
 	width: 10%;
 }
 
 #description5 {
 	position: absolute;
-	margin-top: -9%;
-	margin-left: 2%;
+	margin-top: -125px;
+	margin-left: 25px;
 	width: 10%;
 }
 
 #description6 {
 	position: absolute;
-	margin-top: -9%;
-	margin-left: 2%;
+	margin-top: -125px;
+	margin-left: 25px;
 	width: 10%;
 }
 
@@ -119,7 +118,8 @@ body {
 	font-weight: 100;
 	color: #55555b;
 	padding-bottom: 5%;
-	padding-top: 10%;
+	padding-top: 5%;
+	margin-top: 20%;
 }
 
 #spicynodesViewer {
@@ -158,7 +158,7 @@ body {
 }
 
 #frame4 {
-	margin-top: 12%;
+	margin-top: 42%;
 }
 
 #donnees-title {
@@ -176,13 +176,16 @@ body {
 
 #button_eye1 {
 	margin-left: 95%;
+	margin-bottom: 5%;
 }
 
 #button_eye2 {
 	margin-left: 48%;
+	margin-bottom: 5%;
 }
 
 #button_eye3 {
+	margin-bottom: 5%;
 }
 
 #button_eye4 {
@@ -191,6 +194,7 @@ body {
 
 #frame4to7 {
 	margin-left: 95%;
+	margin-bottom: 5%;
 }
 
 #button_eye5 {
@@ -199,9 +203,14 @@ body {
 
 #frame5to7 {
 	margin-left: 48%;
+	margin-bottom: 5%;
 }
 
 #button_eye6 {
+}
+
+#frame6to7 {
+	margin-bottom: 5%;
 }
 
 #return_frame5 {
@@ -213,7 +222,7 @@ body {
 }
 
 #frame5 {
-	margin-top: 12%;
+	margin-top: 42%;
 	margin-left: 10%;
 }
 
@@ -231,7 +240,7 @@ body {
 }
 
 #frame6 {
-	margin-top: 12%;
+	margin-top: 42%;
 	margin-left: 20%;
 }
 
@@ -258,22 +267,12 @@ body {
 	margin-top: -11%;
 }
 
-#info {
-	position: absolute;
-	right: 5%;
-}
-
-#info:hover {
-	cursor: pointer;
-}
-
 #frame0 {
 	position: fixed;
 	background-color: #8b3413;
-	height: 70px;
+	height: 40px;
 	margin: -1%;
   	width: 100%;
-  	padding-top: 10px;
   	padding-left: 0.8%;
   	padding-right: 0.8%;
   	z-index: 2;
@@ -283,11 +282,21 @@ footer {
 	position: fixed;
 	bottom: 0px;
 	background-color: #3c3838 ;
-	height: 40px;
+	height: 70px;
 	margin: -1%;
   	width: 100%;
   	padding-top: 10px;
   	padding-left: 0.8%;
   	padding-right: 0.8%;
   	z-index: 2;
+}
+
+#info {
+	position: absolute;
+	right: 2%;
+	width: 50px;
+}
+
+#info:hover {
+	cursor: pointer;
 }
