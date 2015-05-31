@@ -5,8 +5,8 @@ showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 		marginLeft: varLeft,
 		marginTop: varTopEye
 	}, 500, function() {
-		document.getElementById("eye").style.marginLeft = "9%";
-		document.getElementById("eye").style.marginTop = "0%";
+		document.getElementById("eye").style.marginLeft = "-1%";
+		document.getElementById("eye").style.marginTop = "60px";
 		document.getElementById("eye").style.display = "none";
 	});
 	$(id2).animate({
@@ -14,7 +14,13 @@ showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 		marginTop: varTopFrame,
 		opacity: 1
 	}, 500, function() {
-		//Animation complete
+		var offset;
+		offset = $(id2).offset().top
+		$('html, body').stop().animate({
+      		scrollTop: offset
+    		}, 1000, function(){
+    			//Animation complete
+    	});
 	});
 };
 
@@ -33,7 +39,11 @@ hideFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 		marginLeft: varLeft,
 		marginTop: varTopEye
 	}, 500, function() {
-		//Animation complete
+		$('html, body').stop().animate({
+      		scrollTop: $("#menu").offset().top
+    		}, 2000, function(){
+    			//Animation complete
+    	});
 	});
 };
 
@@ -81,7 +91,13 @@ hideConclusion = function(id1, id2, varLeft){
 		marginLeft: varLeft,
 		opacity: 1
 	}, 500, function(){
-		//Animation complete
+		var offset;
+		offset = $(id2).offset().top
+		$('html, body').stop().animate({
+      		scrollTop: offset
+    		}, 1000, function(){
+    			//Animation complete
+    	});
 	});
 	$("#frame7").animate({
 		marginTop: "+=5%",
@@ -112,7 +128,7 @@ $("#button_frame1").click(function(){
 
 //return to the eye element; hide frame1
 $("#button_eye1").click(function(){
-	reinitializeEye("13%", "19%");
+	reinitializeEye("13%", "9%");
 	hideFrame("frame1", "#frame1", "-=10%", "-=5%", "-=10%");
 });
 
@@ -126,7 +142,7 @@ $("#button_frame2").click(function(){
 
 //return to the eye element; hide frame2
 $("#button_eye2").click(function(){
-	reinitializeEye("13%", "9%");
+	reinitializeEye("13%", "-1%");
 	hideFrame("frame2", "#frame2", "-=10%", "-=5%", "+=0%");
 });
 
@@ -141,7 +157,7 @@ $("#button_frame3").click(function(){
 
 //return to the eye element; hide frame3
 $("#button_eye3").click(function(){
-	reinitializeEye("13%", "-1%");
+	reinitializeEye("13%", "-11%");
 	hideFrame("frame3", "#frame3", "-=10%", "-=5%", "+=10%");
 });
 
@@ -157,7 +173,7 @@ $("#button_frame4").click(function(){
 
 //return to the eye element; hide frame4
 $("#button_eye4").click(function(){
-	reinitializeEye("-7%", "19%");
+	reinitializeEye("-7%", "9%");
 	hideFrame("frame4", "#frame4", "+=10%", "+=5%", "-=10%");
 });
 
@@ -176,7 +192,7 @@ $("#button_frame5").click(function(){
 
 //return to the eye element; hide frame5
 $("#button_eye5").click(function(){
-	reinitializeEye("-7%", "9%");
+	reinitializeEye("-7%", "-1%");
 	hideFrame("frame5", "#frame5", "+=10%", "+=10%", "+=0%");
 });
 
@@ -195,7 +211,7 @@ $("#button_frame6").click(function(){
 
 //return to the eye element; hide frame6
 $("#button_eye6").click(function(){
-	reinitializeEye("-7%", "-1%");
+	reinitializeEye("-7%", "-11%");
 	hideFrame("frame6", "#frame6", "+=10%", "+=5%", "+=10%");
 });
 
