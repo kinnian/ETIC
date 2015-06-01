@@ -1,5 +1,6 @@
 showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 	document.getElementById(id1).style.display = "inline-block";
+	$(".footer").css("display", "none");
 	$("#eye").animate({
 		opacity: 0,
 		marginLeft: varLeft,
@@ -27,6 +28,7 @@ showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 
 hideFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 	document.getElementById("eye").style.display = "inline-block";
+	$(".footer").css("display", "block");
 	$(id2).animate({
 		marginLeft: varLeft,
 		marginTop: varTopFrame,
