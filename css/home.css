@@ -7,7 +7,7 @@ body {
 
 #title {
 	font-family: 'steelfish_rg', sans-serif;
-	font-size: 3.3em;
+	font-size: 3.1em;
 	width: 80%;
 	color: white;
 	text-align: center;
@@ -15,11 +15,11 @@ body {
 	margin-left: auto;
 	position: relative;
 	z-index: 1;
-	margin-top: -33%;
+	margin-top: -32%;
 }
 
 #screen {
-	width: 100.4%;
+	width: 101.6%;
 	height: 500px;
 	position: relative;
 	z-index: 0;
@@ -27,16 +27,18 @@ body {
 
 #menu {
 	margin-top: 30%;
+	font-size: 0.9em;
 }
 
 #menu-title {
 	display: inline-block;
 	vertical-align: top;
 	color: #55555b;
+	font-size: 1.1em;
 }
 
 #eye {
-	position:absolute;
+	position:relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 100%;
@@ -61,42 +63,42 @@ body {
 
 #description1 {
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -110px;
 	margin-left: 25px;
 	width: 10%;
 }
 
 #description2 {
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -120px;
 	margin-left: 25px;
 	width: 10%;
 }
 
 #description3 {
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -110px;
 	margin-left: 25px;
 	width: 10%;
 }
 
 #description4 {
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -110px;
 	margin-left: 25px;
 	width: 10%;
 }
 
 #description5 {
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -110px;
 	margin-left: 25px;
 	width: 10%;
 }
 
 #description6 {
 	position: absolute;
-	margin-top: -125px;
+	margin-top: -120px;
 	margin-left: 25px;
 	width: 10%;
 }
@@ -278,9 +280,8 @@ body {
   	z-index: 2;
 }
 
-footer {
-	position: fixed;
-	bottom: 0px;
+.footer {
+	position: relative;
 	background-color: #3c3838 ;
 	height: 70px;
 	margin: -1%;
