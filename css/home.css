@@ -25,7 +25,6 @@ body {
 }
 
 #menu {
-	margin-top: 30%;
 	font-size: 0.9em;
 	margin-left: 5%;
 }
@@ -42,7 +41,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 100%;
-	margin-top: 0px;
+	margin-top: 20px;
 	margin-bottom: 40px;
 	color: white;
 	text-align: center;
@@ -52,61 +51,20 @@ body {
 }
 
 .circle {
-	width: 100%;
+	width: 90%;
 }
 
-.separation {
-	margin-top: 6%;
+#outils {
+	margin-left: -10%;
+	margin-top: 7%;
+	margin-right: -2%;
 }
 
-.deco {
-	position: absolute;
-	margin-top: 3.5%;
-	margin-left: -9.5%;
+#sous-debats {
+	margin-left: -14%;
+	margin-top: 7%;
+	margin-right: -2%;
 }
-
-#description1 {
-	position: absolute;
-	margin-top: -110px;
-	margin-left: 25px;
-	width: 10%;
-}
-
-#description2 {
-	position: absolute;
-	margin-top: -120px;
-	margin-left: 25px;
-	width: 10%;
-}
-
-#description3 {
-	position: absolute;
-	margin-top: -110px;
-	margin-left: 25px;
-	width: 10%;
-}
-
-#description4 {
-	position: absolute;
-	margin-top: -110px;
-	margin-left: 30px;
-	width: 9%;
-}
-
-#description5 {
-	position: absolute;
-	margin-top: -110px;
-	margin-left: 25px;
-	width: 10%;
-}
-
-#description6 {
-	position: absolute;
-	margin-top: -120px;
-	margin-left: 25px;
-	width: 10%;
-}
-
 
 .button {
 	display: inline-block;
@@ -122,7 +80,7 @@ body {
 	opacity: 0;
 	display: none;
 	font-weight: 100;
-	color: #55555b;
+	color: #3F3E42;
 	padding-bottom: 5%;
 	padding-top: 5%;
 	margin-top: 20%;
@@ -144,6 +102,10 @@ body {
 	margin-top: -11%;
 }
 
+#arbre-banniere {
+	margin-left: 2%;
+}
+
 #frame2 {
 	margin-left: 10%;
 }
@@ -152,6 +114,10 @@ body {
 	text-align: center;
 	font-size: 2em;
 	margin-top: -11%;
+}
+
+#frise-banniere {
+	margin-left: 2%;
 }
 
 
@@ -163,6 +129,10 @@ body {
 	text-align: center;
 	font-size: 2em;
 	margin-top: -11%;
+}
+
+#carte-banniere {
+	margin-left: 2%;
 }
 
 #carte {
@@ -179,15 +149,23 @@ body {
 	margin-top: -11%;
 }
 
+#donnees-banniere {
+	margin-left: 2%;
+}
+
 #donnees-image {
 	border: 2px solid #55555b;
 	width: 90%;
-	margin-left: 2%;
+	margin-left: 4%;
 	height: 300px;
 }
 
+.button p {
+	text-align: center;
+}
+
 #button_eye1 {
-	margin-left: 95%;
+	margin-left: 75%;
 	margin-bottom: 5%;
 }
 
@@ -244,10 +222,14 @@ body {
 	margin-top: -11%;
 }
 
+#raisons-banniere {
+	margin-left: 2%;
+}
+
 #raisons-image {
 	border: 2px solid #55555b;
 	width: 90%;
-	margin-left: 2%;
+	margin-left: 4%;
 	height: 300px;
 }
 
@@ -262,12 +244,22 @@ body {
 	margin-top: -11%;
 }
 
+#modalite-banniere {
+	margin-left: -13%;
+	width: 125%;
+}
+
 #modalite-image {
 	border: 2px solid #55555b;
 	width: 90%;
-	margin-left: 2%;
+	margin-left: 4%;
 	height: 300px;
 }
+
+#modalite {
+	margin-left: 20%;
+}
+
 #frame7 {
 	margin-top: 20%;
 	margin-left: 10%;
@@ -277,6 +269,10 @@ body {
 	text-align: center;
 	font-size: 2em;
 	margin-top: -11%;
+}
+
+#conclusion-banniere {
+	margin-left: 2%;
 }
 
 #frame0 {
@@ -302,10 +298,17 @@ body {
   	z-index: 2;
 }
 
+.footer p {
+	color: white;
+	text-align: right;
+	margin-right: 85px;
+}
+
 #info {
 	position: absolute;
 	right: 2%;
 	width: 50px;
+	margin-top: -50px;
 }
 
 #info:hover {

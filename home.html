@@ -78,43 +78,29 @@
 
         <div id="eye">
             <img src="images/ecrans.jpg" id="screen"/>
-            <p id="title">LPM : SURVEILLANCE OU PROTECTION DU CITOYEN ?</p>
             <div id="menu">
                 <div>
                     <img src="images/menu.png"><p id="menu-title">MENU</p><img src="images/menu.png">
                 </div></br>
+                <img src="images/outils.png" id="outils"/>
                 <div id="button_frame1" class="button"> 
-                    <img class="circle" src="images/rondmenu.png"/>
-                    <img src="images/marketing.png" class="deco"/>
-                    <p id="description1">ARBRE DES DEBATS</p>
+                    <img class="circle" src="images/rondarbre.png"/>
                 </div>
-                <img src="images/menu-separation.png" class="separation"/>
                 <div id="button_frame2" class="button"> 
-                    <img class="circle" src="images/rondmenu.png"/>
-                    <img src="images/calendar.png" class="deco"/>
-                    <p id="description2">FRISE CHRONOLOGIQUE</p>
+                    <img class="circle" src="images/rondfrise.png"/>
                 </div>
-                <img src="images/menu-separation.png" class="separation"/>
                 <div id="button_frame3" class="button"> 
-                    <img class="circle" src="images/rondmenu.png"/>
-                    <img src="images/map.png" class="deco"/>
-                    <p id="description3">CARTOGRAPHIE DU WEB</p></div></br>
+                    <img class="circle" src="images/rondcarte.png"/>
+                </div></br>
+                <img src="images/sous-debats.png" id="sous-debats"/>
                 <div id="button_frame4" class="button"> 
-                    <img class="circle" src="images/rondmenu.png"/>
-                    <img src="images/servers.png" class="deco"/>
-                    <p id="description4">QUELLES DONNEES ?</p>
+                    <img class="circle" src="images/ronddonnees.png"/>
                 </div>
-                <img src="images/menu-separation.png" class="separation"/>
                 <div id="button_frame5" class="button"> 
-                    <img class="circle" src="images/rondmenu.png"/>
-                    <img src="images/question.png" class="deco"/>
-                    <p id="description5">POUR QUELLES RAISONS ?</p>
+                    <img class="circle" src="images/rondraison.png"/>
                 </div>
-                <img src="images/menu-separation.png" class="separation"/>
                 <div id="button_frame6" class="button"> 
-                    <img class="circle" src="images/rondmenu.png"/>
-                    <img src="images/law.png" class="deco"/>
-                    <p id="description6">EXISTENCE ET MODALITE DE CONTRÔLE</p>
+                    <img class="circle" src="images/rondmodalite.png"/>
                 </div>
             </div>
             </br></br></br>
@@ -127,10 +113,10 @@
         <!-- FRAME 1 -->
 
 		<div id="frame1" class="frame">
-            <img src="images/bannieretitre.png"/>
+            <img id="arbre-banniere" src="images/bannieretitre.png"/>
             <p id="arbre-title">Arbre des débats</p></br></br>
-            <object classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 id="spicynodesViewer" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" height="360" width="640" ><param name="movie" value="http://media.spicynodes.org/display.swf?id=9bf1696c47916caf0e1076e1391af93b&nodemapID=571937"> <param name="scalemode" value="showall" /><param name="allowFullScreen" value="true" /><param name="wmode" value="opaque" /><param name="quality" value="high" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed name="spicynodesViewer" id="spicynodesViewer" wmode="opaque" scalemode="showall" allowfullscreen="true" allowScriptAccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://media.spicynodes.org/display.swf?id=9bf1696c47916caf0e1076e1391af93b&nodemapID=571937" type="application/x-shockwave-flash" quality="high" height="360" width="640"></embed></object>
-            <img src="images/downright.png" id="button_eye1" class="button"/>
+            <object classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 id="spicynodesViewer" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" height="360" width="640" ><param name="movie" value="http://media.spicynodes.org/display.swf?id=9bf1696c47916caf0e1076e1391af93b&nodemapID=571937"> <param name="scalemode" value="showall" /><param name="allowFullScreen" value="true" /><param name="wmode" value="opaque" /><param name="quality" value="high" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><embed name="spicynodesViewer" id="spicynodesViewer" wmode="opaque" scalemode="showall" allowfullscreen="true" allowScriptAccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://media.spicynodes.org/display.swf?id=9bf1696c47916caf0e1076e1391af93b&nodemapID=571937" type="application/x-shockwave-flash" quality="high" height="360" width="640"></embed></object></br></br></br>
+            <div id="button_eye1" class="button"><p>MENU</p><img src="images/downright.png"/></div>
 		</div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -139,10 +125,10 @@
         <!-- FRAME 2 -->
 
 		<div id="frame2" class="frame">
-            <img src="images/bannieretitre.png"/>
+            <img id="frise-banniere" src="images/bannieretitre.png"/>
             <p id="frise-title">Frise chronologique</p></br></br>
-            <iframe src='//cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=1irSMW22Jdf-9LKQf0pMnZ5Zwww0unAZX3D7l3mxszQ4&font=Bevan-PotanoSans&maptype=toner&lang=fr&height=650' width='100%' height='650' frameborder='0'></iframe>
-            <img src="images/down.png" id="button_eye2" class="button"/>
+            <iframe src='//cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=1irSMW22Jdf-9LKQf0pMnZ5Zwww0unAZX3D7l3mxszQ4&font=Bevan-PotanoSans&maptype=toner&lang=fr&height=650' width='100%' height='650' frameborder='0'></iframe></br></br></br>
+            <div id="button_eye2" class="button"><p>MENU</p><img src="images/down.png" /></div>
 		</div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -151,7 +137,7 @@
         <!-- FRAME 3 -->
 
 		<div id="frame3" class="frame">
-            <img src="images/bannieretitre.png"/>
+            <img id="carte-banniere" src="images/bannieretitre.png"/>
             <p id="carte-title">Cartographie du web</p></br></br>
             <p>
             Acteurs politiques :</br></br>
@@ -194,7 +180,7 @@ Nous avons fait le choix de nous limiter à une association principalement, ici 
 Un acteur majeur de l’internet dont l’absence peut troubler est Facebook. En effet, suite à notre travail de recherche, Facebook se trouvait avoir des liens avec tous les autres acteurs et sa présence sur cette carte en empêchait donc la lisibilité. C’est pourquoi nous l’avons donc enlevé, bien qu’il soit par exemple membre de l’ASIC.</br>
 </p>
 
-            <img src="images/downleft.png" id="button_eye3" class="button"/>
+            <div id="button_eye3" class="button"><p>MENU</p><img src="images/downleft.png" /></div>
 		</div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -204,55 +190,99 @@ Un acteur majeur de l’internet dont l’absence peut troubler est Facebook. En
 
 		<div id="frame4" class="frame">
             <img src="images/donnees.jpg" id="donnees-image"/></br></br>
-            <img src="images/bannieretitre.png"/>
+            <img id="donnees-banniere" src="images/bannieretitre.png"/>
             <p id="donnees-title">Données</p></br></br>
-            <img src="images/upright.png" id="button_eye4" class="button"/>
+            <div id="button_eye4" class="button"><img src="images/upright.png" /><p>MENU</p></div>
             <p id="donnees">
-            Nous allons ici nous intéresser à la qualification exacte des informations auxquelles auront accès les autorités concernées.</br>
+Quelles données ?</br>
 
-            Un des débats phares lié à l’article 20 de la Loi de Programmation Militaire est la question des données accessibles.
-            Il était en effet difficile de savoir, avant la publication du décret le 24 décembre 2014, s’il s’agirait des métadonnées comme précédemment ou bien si le contenu des communications serait entièrement accessible.</br></br>
+La loi de programmation militaire permet la mise à disposition de données, suite à une surveillance, à différentes entités gouvernementales.
+Nous verrons ici comment, et par qui, les données sont collectées, quelles sont-elles, ainsi que la durée de conservation à laquelle elles sont assujetties.
+</br>
+Quels moyens sont mis en oeuvre pour collecter les données et par qui est-ce réalisé ?
+</br>
+    Les Fournisseurs d’accès à Internet doivent être en mesure de donner aux services de renseignement toutes les données d’un citoyen visé par une écoute administrative. Dans le projet de loi, il est clairement spécifié que les FAI doivent fournir ces données à leur frais, grâce à des systèmes de détection approuvés par l’Etat. 
+</br></br>
+    Néanmoins, le gouvernement n’a pas indiqué quels seraient ces systèmes de détection, et les solutions techniquement connues ne sont pas nombreuses. Les associations de défense des droits du citoyen craignent que la technique utilisée ne soit le Deep Packet Inspection, solution que le gouvernement a assuré ne pas vouloir choisir.
+</br></br>
+    Cette technique n’est pas illégale en soi, mais elle a été vendue par plusieurs sociétés leader sur ce marché (Qosmos, BlueCoat) à des dictatures afin de surveiller les opposants politiques sur Internet, et il semble impensable que ces sociétés fournissent les outils nécessaires à l’application de la loi. Notamment ces deux entreprises ont participé à la vente de matériel informatique basé sur le DPI permettant la traque des opposants politiques à la Syrie de Bachar El-Assad.
+</br></br>
+    Or, BlueCoat a été récemment entendue à l’Assemblée Nationale dans le cadre du nouveau projet de loi sur le renseignement militaire, et Qosmos est une entreprise connue pour travailler en collaboration avec les services de renseignement français.
+</br></br>
+    Les doutes des associations de défense des droits du citoyens sont donc les suivants : quelle technique va vraiment être utilisée par les FAI pour collecter les données, et quelle entreprise va fournir les systèmes d’interception ? L’Etat n’a toujours pas précisé ces questions.
+</br></br>
 
-            Par conséquent, avant d’avoir eu la version définitive du projet de Loi de Programmation Militaire, l’attention portée par la CNIL sur les données ou informations mises à disposition était due à la volonté “d'ouvrir les vannes”.
-            En effet, le projet avait suscité la crainte de la CNIL face à “une atteinte disproportionnée au respect de la vie privée”.</br>
+Par qui ?
+</br>
+L’article 13 permet aux services de renseignement des ministères de la Défense, de l’Intérieur, de l’Économie et du Budget d’accéder aux données conservées par les opérateurs de communications électroniques, les fournisseurs d’accès à internet et les hébergeurs et d’autoriser la réquisition de données de connexion dans le cadre d’enquêtes administratives concernant la sécurité nationale.
+</br></br>
+Mais certains s’insurgent contre les autorités ayant accès à ces données. </br>
+En effet Gilles Babinet, entrepreneur français et responsable des enjeux de l’économie numérique pour la France auprès de la Commission européenne, et Benjamin Bayart, ancien président de French Data Network, considèrent que le problème de cette loi est qu’il n’y a pas l’intervention d’un juge.
+</br></br>
+Ils considèrent cela comme une absence de contre pouvoir, puisque la CNCIS n’intervient que 48 heures après l’interception des données. 
+Et la CNCIS ne transmet au Premier ministre qu’un avis suggérant l’arrêt des écoutes, donc une simple suggestion, arrivant une fois que les écoutes ont eu lieu. Il n’y a donc, pour eux, pas de séparation entre les pouvoirs.
+</br></br>
+Il est intéressant de noter que la phase d’enquête et de renseignement tient du pouvoir administratif et qu’il est donc logique que la CNCIS (autorité administrative indépendante) soit chargée du contrôle des demandes de collecte a posteriori et que ce ne soit pas un magistrat. 
+De plus, concernant les interceptions de données, les perquisitions, les écoutes téléphoniques et la collecte de données, elles devront être ordonnées soit par un juge, soit par le Premier ministre, après avis et contrôle de la CNCIS.
+</br></br>
+Par ailleurs, une personnalité qualifiée auprès du Premier ministre est chargée de valider les requêtes des ministères de l'Intérieur, de la Défense, de l’Économie et du Budget : “celle-ci est choisie par Matignon entre trois personnes proposées par la CNCIS. L’autorité effectue, une fois la procédure lancée et notifiée, un contrôle de légalité et de proportionnalité”.
+ </br></br>
+Quel type de données s’avère être collecté ?
+</br>
+Nous allons ici nous intéresser à la qualification exacte des informations auxquelles auront accès les autorités concernées.
+</br>
+Un des débats phares lié à l’article 20 de la Loi de Programmation Militaire est la question des données accessibles.
+Il était en effet difficile de savoir, avant la publication du décret le 24 décembre 2014, s’il s’agirait des métadonnées comme précédemment ou bien si le contenu des communications serait entièrement accessible.
+</br></br>
+Par conséquent, avant d’avoir eu la version définitive du projet de Loi de Programmation Militaire, l’attention portée par la CNIL sur les données ou informations mises à disposition était due à la volonté “d'ouvrir les vannes”.
+En effet, le projet avait suscité la crainte de la CNIL face à “une atteinte disproportionnée au respect de la vie privée”.
+</br></br>
+De fait, les informations accessibles seront celles actuellement prévues par les articles R. 10-13 et R.10-14 CPCE du Code des postes et des communications électroniques, mais aussi par l’article 1er du décret du 25 février 2011 relatif à la conservation et à la communication des données permettant d'identifier toute personne ayant contribué à la création d'un contenu mis en ligne.
+</br></br>
+Les informations visées sont donc :
+</br>
+•   Les caractéristiques techniques ainsi que la date, l'horaire et la durée de chaque communication ;</br>
+•   Les données « permettant d'identifier le ou les destinataires d’une communication » électronique ;</br>
+•   Les données permettant d'identifier l'origine de la communication ;</br>
+•   L'identifiant de la connexion ;</br>
+•   Les dates et heures de début et de fin de la connexion ;</br>
+•   Les types de protocoles utilisés pour la connexion au service et pour le transfert des contenus </br>
+•   Les informations fournies lors de la souscription d’un contrat d’abonnement à Internet ou lors de la création d’un compte auprès d’un hébergeur : l’identifiant de la connexion utilisée pour la création du compte, les noms et prénoms, adresse postale, pseudonymes utilisés, adresse email, numéros de téléphone, « mot de passe ainsi que les données permettant de le vérifier ou de le modifier » ;</br>
+•   D’éventuelles informations relatives à un paiement : type, montant et référence du paiement, ou bien encore date et heure de la transaction.
+</br></br>
+Le contenu interne des communications interceptées ne sera pas mis à disposition des autorités en vigueur.
+Enfin, la CNIL a ainsi salué les dispositions mentionnées, car elles “ne permettent en aucun cas de réaliser des interceptions de contenus ou des perquisitions en ligne et visent uniquement les données mentionnées aux articles R. 10-13 et R. 10-14 CPCE et 1er du décret du 25 février 2011, à l'exclusion de toute autre information”.
+</br></br>
 
-            De fait, les informations accessibles seront celles actuellement prévues par les articles R. 10-13 et R.10-14 CPCE du Code des postes et des communications électroniques, mais aussi par l’article 1er du décret du 25 février 2011 relatif à la conservation et à la communication des données permettant d'identifier toute personne ayant contribué à la création d'un contenu mis en ligne.</br></br>
 
-            Les informations visées sont donc :</br>
+ 
+Quels sont les impératifs de durée pour la conservation des données collectées ?
+</br>
+La durée de conservation des données fait débat au sein des associations de protection de la liberté sur Internet.
+</br>
+La Quadrature du Net a ainsi déposé un recours au Conseil d'État en date du 18 février 2015, visant à attaquer la Loi de Programmation Militaire, notamment quant au respect des droits et libertés des internautes.
+</br></br>
+En effet, alors que la Cour de justice de l’Union européenne (CJUE) a fait marche arrière face à ses obligations de conservation de données, la Loi de Programmation Militaire vise une conservation des données pouvant aller jusqu’à trois ans par les opérateurs de télécommunications.
+LA CJUE a en effet invalidé, par une décision rendue le 8 avril 2014, la directive 2006/24 adoptée dans le prolongement des attentats de Madrid et de Londres et obligeant l’ensemble des acteurs du Net à conserver, pendant une durée d’un an, l’ensemble des données de connexion d’utilisateurs d’Internet.
+</br></br>
+La Cour citée a estimé que ce mécanisme était contraire aux textes fondamentaux, car applicable à des personnes “pour lesquelles il n’existe aucun indice de nature à laisser croire que leur comportement puisse avoir un lien, même direct ou lointain, avec des infractions graves”.
+</br>
+En outre, le décret précise que “les informations ou les documents demandés sont transmis, enregistrés, conservés et effacés” pour une durée maximale de trois ans et “selon des modalités assurant leur sécurité, leur intégrité et leur suivi”.
+</br></br>
+Cependant, la conservation des données par le gouvernement était initialement prévue pour dix jours renouvelables.
+C'est après la lecture du texte à l'Assemblée Nationale que cette composante a été amendée par Mme Patrica Adam, présidente de la commission de la défense nationale et des forces armées, et Mme Geneviève Gosselin-Fleury, membre de cette même commission.
+La durée de conservation a ainsi été augmentée à trente jours renouvelables, la durée initiale ayant été jugée trop courte.
+</br></br>
+Par ailleurs, la loi nous informe que "(la demande) peut être renouvelée dans les mêmes conditions de forme et de durée. Elle est communiquée dans un délai de quarante-huit heures au président de la Commission nationale de contrôle des interceptions de sécurité". (Art. L. 246-3)
+</br>
+La suppression des données au bout de leur durée maximale de conservation, sauf suppression préalable, est un processus défini comme automatisé, et sous contrôle du Premier ministre.
+De plus, "le directeur du groupement interministériel de contrôle adresse chaque année à la Commission nationale de contrôle des interceptions de sécurité un procès-verbal certifiant que l'effacement a été effectué". (Art. R. 246-5)
+</br></br>
+Finalement, la durée de conservation par les opérateurs s’avère renouvelable, au bout de trois ans, par la Commission nationale de contrôle des interceptions de sécurité sur proposition du Premier ministre.
+</br></br>
 
-            Les caractéristiques techniques ainsi que la date, l'horaire et la durée de chaque communication ;</br>
-            Les données « permettant d'identifier le ou les destinataires d’une communication » électronique ;</br>
-            Les données permettant d'identifier l'origine de la communication ;</br>
-            L'identifiant de la connexion ;</br>
-            Les dates et heures de début et de fin de la connexion ;</br>
-            Les types de protocoles utilisés pour la connexion au service et pour le transfert des contenus ;</br>
-            Les informations fournies lors de la souscription d’un contrat d’abonnement à Internet ou lors de la création d’un compte auprès d’un hébergeur : l’identifiant de la connexion utilisée pour la création du compte, les noms et prénoms, adresse postale, pseudonymes utilisés, adresse email, numéros de téléphone, « mot de passe ainsi que les données permettant de le vérifier ou de le modifier » ;</br>
-            D’éventuelles informations relatives à un paiement : type, montant et référence du paiement, ou bien encore date et heure de la transaction.</br>
-
-            Le contenu interne des communications interceptées ne sera pas mis à disposition des autorités en vigueur.</br>
-            Enfin, la CNIL a ainsi salué les dispositions mentionnées, car elles “ne permettent en aucun cas de réaliser des interceptions de contenus ou des perquisitions en ligne et visent uniquement les données mentionnées aux articles R. 10-13 et R. 10-14 CPCE et 1er du décret du 25 février 2011 susvisé, à l'exclusion de toute autre information”.</br></br>
-
-
-            Durée de conservation</br></br>
-
-            La durée de conservation des données fait débat au sein des associations de protection de la liberté sur Internet.</br>
-
-            La Quadrature du Net a ainsi déposé un recours au Conseil d'État en date du 18 février 2015, visant à attaquer la Loi de Programmation Militaire, notamment quant au respect des droits et libertés des internautes.</br>
-
-            En effet, alors que la Cour de justice de l’Union européenne (CJUE) a fait marche arrière face à ses obligations de conservation de données, la Loi de Programmation Militaire vise une conservation des données pouvant aller jusqu’à trois ans.
-            LA CJUE a en effet invalidé, par une décision rendue le 8 avril 2014, la directive 2006/24 adoptée dans le prolongement des attentats de Madrid et de Londres et obligeant l’ensemble des acteurs du Net à conserver, pendant une durée d’un an, l’ensemble des données de connexion d’utilisateurs d’Internet.</br>
-
-            La Cour citée a estimé que ce mécanisme était contraire aux textes fondamentaux, car applicable à des personnes « pour lesquelles il n’existe aucun indice de nature à laisser croire que leur comportement puisse avoir un lien, même direct ou lointain, avec des infractions graves ».</br>
-
-            En outre, le décret précise que “les informations ou les documents demandés sont transmis, enregistrés, conservés et effacés” pour une durée maximale de trois ans et “selon des modalités assurant leur sécurité, leur intégrité et leur suivi”.</br></br>
-
-            La suppression des données au bout de leur durée maximale de conservation, sauf suppression préalable, est un processus défini comme automatisé, et sous contrôle du Premier Ministre.
-            De plus, "le directeur du groupement interministériel de contrôle adresse chaque année à la Commission nationale de contrôle des interceptions de sécurité un procès-verbal certifiant que l'effacement a été effectué". (Art. R. 246-5)</br>  
-
-            Finalement, la durée de conservation s’avère renouvelable, au bout de trois ans, sans que mention ne soit faite de la durée totale, après renouvellement, ni du nombre de renouvellements éventuels.
-            Et les conditions permettant le renouvellement ne sont pas précisées, bien qu’il faille probablement se référer aux conditions ayant permis la récupération des données en premier lieu.</br>
             </p>
-            <img src="images/downright.png" id="frame4to7" class="button"/>
+            <div  id="frame4to7" class="button"><p>CONCLUSION</p><img src="images/downright.png"/></div>
 		</div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -262,9 +292,9 @@ Un acteur majeur de l’internet dont l’absence peut troubler est Facebook. En
 
         <div id="frame5" class="frame">
             <img src="images/raisons.jpg" id="raisons-image"/></br></br>
-            <img src="images/bannieretitre.png"/>
+            <img id="raisons-banniere" src="images/bannieretitre.png"/>
             <p id="raisons-title">Pour quelles raisons ?</p></br></br>
-            <img src="images/up.png" id="button_eye5" class="button"/>
+            <div id="button_eye5" class="button"><img src="images/up.png" /><p>MENU</p></div>
             <p id="raisons">
                 La  loi  de  la  programmation  militaire  permettra  de  surveiller  sans  l’accord  d’un  juge  toute
 
@@ -322,7 +352,7 @@ scientifique et économique de la France</strong></I> ». Les opposants à la lo
 
 manque de précision.</br>
             </p>
-            <img src="images/down.png" id="frame5to7" class="button"/>
+            <div id="frame5to7" class="button"><p>CONCLUSION</p><img src="images/down.png" /></div>
         </div>
 
 <!-- ____________________________________________________________________________________________________________ -->
@@ -332,17 +362,65 @@ manque de précision.</br>
 
         <div id="frame6" class="frame">
             <img src="images/modalite.jpg" id="modalite-image"/></br></br>
-            <img src="images/bannieretitre.png"/>
-            <p id="modalite-title">Existence et modalité de contrôle</p></br></br>
-            <img src="images/upleft.png" id="button_eye6" class="button">
-            <p id="controle">
-                Dans le cadre de la loi de programmation militaire 2014-2019, les informations utilisables par les services de renseignement  peuvent être réclamées par des agents désignés au sein des ministères de la sécurité intérieure, de la défense mais aussi de l’économie et du budget ou par les ministres eux-mêmes. </br></br>
-                Ces personnes soumettent alors leur demande à une personnalité qualifiée placée auprès du Premier ministre ou à ses adjoints (au nombre maximum de trois personnes).</br>
-                Cette personne est proposée par le premier ministre parmi une liste d’au moins trois noms et elle est  finalement choisie par la Commission nationale de contrôle des interceptions de sécurité pour une durée de 3 ans renouvelable.</br>
-                Son rôle est crucial car c’est elle qui accepte ou non la mise en place de la surveillance. Elle doit également établir un rapport d’activité annuel adressé à la commission nationale de contrôle des interceptions de sécurité afin de justifier les écoutes.</br>
-                Ainsi, ce dispositif interministériel est totalement indépendant du système judiciaire et à la différence des écoutes administratives, aucun juge (autre que les trois magistrats de la Commission Nationale de Contrôle des Interceptions de Sécurité) n’interviendront dans le processus.</br>
+            <img id="modalite-banniere" src="images/bannierecontrole.png"/></br></br></br></br>
+            <div id="button_eye6" class="button"><img src="images/upleft.png" ><p>MENU</p></div>
+<p>
+La loi de programmation 2014-2019 prévoit plusieurs moyens de contrôler les différentes captations de données par les services de renseignement. 
+Le dispositif de mise en place de surveillance marche comme suit :</br></br></br></br>
+
+<img id="modalite" src="images/gautier.png"/></br></br>
+
+Dispositif Interministériel
+</br>
+On distingue donc le rôle de plusieurs grandes entités. Tout d’abord nous avons un dispositif interministériel constitué de quatre acteurs : les informations utilisables par les services de renseignement peuvent être réclamées par des agents désignés au sein des ministères de la sécurité intérieure, de la défense mais aussi de l’économie et du budget ou par les ministres eux-mêmes.
+</br></br>
+Ces personnes soumettent alors leur demande à une personnalité qualifiée placée auprès du Premier ministre ou à ses adjoints (au nombre maximum de trois personnes).
+</br></br>
+Cette personne est proposée par le Premier ministre parmi une liste d’au moins trois noms et elle est finalement choisie par la Commission Nationale de Contrôle des Interceptions de Sécurité pour une durée de 3 ans renouvelable. 
+</br></br>
+Son rôle est alors crucial car c’est elle qui accepte ou non la mise en place de la surveillance. Elle doit également établir un rapport d’activité annuel adressé à la Commission Nationale de Contrôle des Interceptions de Sécurité afin de justifier les écoutes.
+</br></br>
+Comme nous le voyons, ce dispositif interministériel est totalement indépendant du système judiciaire et à la différence des écoutes administratives, aucun juge (autre que les trois magistrats de la Commission Nationale de Contrôle des Interceptions de Sécurité) n’interviendra dans le processus.
+ </br></br>
+Commission Nationale des Interceptions de Sécurité (CNCIS)
+</br>
+La seconde grande entité de ce mécanisme est bien-sûr la CNCIS. La Commission Nationale des Interceptions de Sécurité (CNCIS) est une autorité administrative indépendante française créée en 1991 avec pour mission première la vérification de la légalité des autorisations d’interception. 
+</br></br>
+Le projet de loi prévoit que la Commission Nationale de Contrôle des Interceptions de Sécurité (CNCIS) soit informée du lancement d’une procédure de renseignement dans un délai de 48 heures par Matignon. </br>
+Elle a pour mission de contrôler la légalité des interceptions de sécurité, c’est-à-dire les écoutes qui ne seront pas judiciaires. Ses avis, consultatifs, sont systématiquement suivis par le Premier ministre. La CNCIS est composée de trois magistrats dont un député et un sénateur.
+</br></br>
+Le pilotage et l’examen des cas sont effectués par le président et deux parlementaires (Jean-Jacques Urvoas, président PS de la commission des lois de l'assemblée, et Jean-Jacques Hyest, sénateur UMP).
+</br></br>
+Dans le nouveau processus prévu par la loi de programmation militaire, la CNCIS a un droit de regard a posteriori sur les surveillances en cours par les services de renseignement. Elle peut en outre procéder à des contrôles visant à s'assurer du respect des conditions d’application de la loi de programmation militaire. En cas de manquement, elle adresse une recommandation au Premier ministre. Celui-ci doit alors faire connaître à la commission, dans un délai de quinze jours, les mesures prises pour remédier au manquement constaté.
+</br></br>
+Cependant, tous ces moyens de contrôle sont des actions prévues par la loi et pouvant intervenir dans celle-ci. Mais quelles sont les modalités de contrôle sur la loi en elle-même ?
+ </br></br>
+Conseil constitutionnel
+</br>
+Le Conseil constitutionnel est une institution française créée par la Constitution de la Cinquième République du 4 octobre 1958. Il peut se prononcer sur la conformité à la constitution d’une loi. Cependant, il n’a pas pu être saisi lors du projet de loi de programmation militaire. 
+</br></br>
+En effet, avant la deuxième lecture au sénat, fixée courant décembre 2013, les acteurs du net ont appelé à saisir le Conseil Constitutionnel car il était, selon La Quadrature du Net, le seul à pouvoir empêcher l’application de ces dispositions “attentatoires aux libertés fondamentales des citoyens”. </br>
+D’ailleurs, certains politiques des groupes écologistes, du Front de gauche et de l’UMP, furent favorables à cette saisine. Malheureusement, ils n’ont pu réunir les soixante signatures de députés ou de sénateurs nécessaires à son bon déroulement (difficulté de coalition entre les partis).
+</br></br>
+Cependant, malgré l’adoption du texte de loi en deuxième lecture, Renaissance Numérique a continué à agir et s’était associé à Reporters sans Frontières pour demander à nouveau la saisine du Conseil Constitutionnel : sans résultat une nouvelle fois.
+</br></br>
+Ainsi, au terme du 1er juin 2015, la loi de programmation militaire n’a toujours pas été confrontée à la Constitution. 
+</br></br>
+ 
+Droit européen
+</br>
+La France faisant partie d’une instance plus grande qu’est l’Union Européenne, celle-ci doit se soumettre aux lois de cette dernière, en tant qu’état membre de l’UE. De ce fait, toute modification du droit européen a des répercussions sur le droit français, ce qui est le cas pour la loi de programmation militaire.
+</br></br>
+En terme de surveillance, et plus précisément en terme de rétention des données échangées sur les réseaux de communication, données justement ciblées par la LPM, c’est la directive européenne de 2006 (directive 2006/24/CE) qui était en vigueur. Cette directive, remplaçant la directive précédente de 2002, oblige tout état membre à conserver les métadonnées de toute communication, sur une durée maximale de deux ans. C’est-à-dire conserver les données identifiants la source et le destinataire d’une communication, le type de communication, les appareils utilisés ainsi que les données de géolocalisation. 
+</br></br>
+Cette directive a cependant été invalidée depuis par la Cour de Justice de l’Union Européenne (CJUE) le 8 avril 2014 après avoir été saisie par la cour suprême irlandaise concernant un litige impliquant Digital Rights. </br>
+En effet, La CJUE a estimé que le cadre d’application de cette directive était beaucoup trop vaste et pouvait ainsi s’appliquer à des individus ne pouvant être liés ni de près ni de loin à des infractions graves. En outre, elle ne prévoit aucune exception et peut même s’appliquer à des personnes soumises au secret professionnel. </br>
+La directive a donc été invalidée en 2014.
+</br></br>
+On peut alors se demander quelles vont être les répercussions de cette invalidation sur le droit européen ainsi que le droit français. Suite à cette invalidation de la part de la CJUE, une nouvelle directive va devoir être produite par l’UE. Cette directive en question n’a pas encore vu le jour cependant. Ainsi les pays peuvent continuer à faire passer des lois en prenant en compte la directive de 2006. Cependant, toute loi devra ensuite respecter le droit européen une fois la directive européenne produite. Si la LPM venait à ne pas être en adéquation avec la future directive européenne, la France devrait produire une nouvelle loi respectant cette nouvelle directive afin de remplacer la LPM.
+</br></br>
             </p>
-            <img src="images/downleft.png" id="frame6to7" class="button"/>
+            <div id="frame6to7" class="button"><p>CONCLUSION</p><img src="images/downleft.png" /></div>
         </div>
 <!-- ____________________________________________________________________________________________________________ -->
 
@@ -350,19 +428,27 @@ manque de précision.</br>
         <!-- FRAME 7 -->
 
         <div id="frame7" class="frame">
-            <img src="images/bannieretitre.png"/>
+            <img id="conclusion-banniere" src="images/bannieretitre.png"/>
             <p id="conclusion-title">Conclusion</p></br></br>
 
             <img src="images/upleft.png" id="return_frame4" class="button"/>
             <img src="images/up.png" id="return_frame5" class="button"/>
             <img src="images/upright.png" id="return_frame6" class="button"/>
             <p id="conclusion">
-                Le caractère liberticide de l’extension de l’accès aux données sur Internet par les services de renseignement Français constitue la majeure critique qui a été faite à la loi de programmation militaire.</br>
-                Les raisons invoquées par l’Etat semblent naturelles : lutte contre le terrorisme, sécurité nationale, protection du patrimoine économique et scientifique, lutte contre la délinquance...</br>
-                Néanmoins, les structures de contrôles mises en places par la loi semblent insuffisantes et laissent planer le spectre d’une surveillance généralisée du citoyen par les services de renseignement. La majorité des structures de contrôle n’ont qu’un avis consultatif, et la seule autorité indépendante du pouvoir exécutif à pouvoir ordonner l’arrêt des écoutes, la CNCIS, ne peut le faire qu’après remise d’un rapport annuel établissant un usage abusif des écoutes, lequel rapport est écrit par un agent nommé par le Premier Ministre et ne dépendant que de lui.</br>
-                Le recours déposé par la Quadrature du Net devant le Conseil d’Etat le 18 Février 2015 devrait se traduire par la saisie du Conseil Constitutionnel et de la Cour de Justice de l’Union Européenne, qui, si elle reste sur la même ligne de conduite vis à vis de l’exploitation des données des citoyens sur Internet, devrait se prononcer contre ce texte, et ainsi obliger la France à revoir cette loi.
-                </br></br>
-                Dans le sillage des récents évènements terroristes ayant eu lieu au siège de Charlie Hebdo, les parlementaires sont en train de discuter d’une nouvelle loi sur l’interception des données sur Internet, loi qui permettrait aux services de renseignement d’avoir accès de manière beaucoup plus complète aux données des citoyens. Au coeur de cette loi notamment : l’utilisation d’algorithmes de masse. Ces derniers posent une vraie question éthique : peut on vraiment condamner quelqu’un sur la base d’un algorithme dont le code n’est pas accessible ? Cette nouvelle loi fait beaucoup couler d’encre en ce moment, car ses implications sont lourdes pour notre société.</br>
+Le caractère liberticide de l’extension de l’accès aux données sur Internet par les services de renseignement Français constitue la majeure critique qui a été faite à la loi de programmation militaire.
+</br></br>
+Les raisons invoquées par l’Etat semblent naturelles : lutte contre le terrorisme, sécurité nationale, protection du patrimoine économique et scientifique, lutte contre la délinquance...</br>
+Mais ces raisons sont aussi de plus en plus larges, et nous sommes en droit de nous demander si les moyens mis en oeuvre pour récupérer ces données ne dépassent pas le stricte cadre des raisons invoquées, si les moyens mis en oeuvre par cette loi ne sont pas disproportionnés vis à vis des enjeux.
+</br></br>
+En l'occurrence, la collecte systématique des données des citoyens soulève d’autres questions, comme la durée de conservation des données ou la qualité des données à intercepter. Selon la loi, seules les méta-données sont concernées, mais nombreux sont les experts qui affirment que les méta-données contiennent énormément d’information sur les agissements d’une personne.
+</br></br>
+De plus, les structures de contrôles mises en places par la loi semblent insuffisantes et laissent planer le spectre d’une surveillance généralisée du citoyen par les services de renseignement. La majorité des structures de contrôle n’ont qu’un avis consultatif, et la seule autorité indépendante du pouvoir exécutif à pouvoir ordonner l’arrêt des écoutes, la CNCIS, ne peut le faire qu’après remise d’un rapport annuel établissant un usage abusif des écoutes, lequel rapport est écrit par un agent nommé par le Premier Ministre et ne dépendant que de lui.
+</br></br>
+Le recours déposé par la Quadrature du Net devant le Conseil d’Etat le 18 Février 2015 devrait se traduire par la saisie du Conseil Constitutionnel et de la Cour de Justice de l’Union Européenne, qui, si elle reste sur la même ligne de conduite vis à vis de l’exploitation des données des citoyens sur Internet, devrait se prononcer contre ce texte, et ainsi obliger la France à revoir cette loi.
+</br></br>
+Dans le sillage des récents évènements terroristes ayant eu lieu au siège de Charlie Hebdo, les parlementaires sont en train de discuter d’une nouvelle loi sur l’interception des données sur Internet, loi qui permettrait aux services de renseignement d’avoir accès de manière beaucoup plus complète aux données des citoyens. Au coeur de cette loi notamment : l’utilisation d’algorithmes de masse. Ces derniers posent une vraie question éthique : peut on vraiment condamner quelqu’un sur la base d’un algorithme dont le code n’est pas accessible ? Cette nouvelle loi fait beaucoup couler d’encre en ce moment, car ses implications sont lourdes pour notre société.
+</br></br>
+
             </p>
         </div>
 
@@ -371,6 +457,7 @@ manque de précision.</br>
 	 <!-- FOOTER -->
 
         <div class="footer">
+            <p>A propos de nous</p>
             <img id="info" src="images/info.png"/>
         </div>
 

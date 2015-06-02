@@ -29,12 +29,12 @@ showFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 hideFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 	document.getElementById("eye").style.display = "inline-block";
 	$(".footer").css("display", "block");
+	document.getElementById(id1).style.display = "none";
 	$(id2).animate({
 		marginLeft: varLeft,
 		marginTop: varTopFrame,
 		opacity: 0
 	}, 500, function() {
-		document.getElementById(id1).style.display = "none";
 	});
 	$("#eye").animate({
 		opacity : 1,
@@ -45,7 +45,7 @@ hideFrame = function(id1, id2, varTopEye, varTopFrame, varLeft) {
 	});
 	$('html, body').stop().animate({
     	scrollTop: $("#menu").offset().top
-    	}, 500, function(){
+    	}, 1000, function(){
     		//Animation complete
     });
 };

@@ -21,6 +21,21 @@
   margin-right: 10%;
 }
 
+#title a {
+
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: black;
+
+}
+
+#title a:visited {
+	color:black;
+}
+
 #title {
 	background-color: #F4F5ED;
 	height: 90%;
