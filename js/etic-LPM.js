@@ -57,31 +57,31 @@ reinitializeEye = function(varTop, varLeft) {
 
 showConclusion = function(id1, id2, varLeft){
 	document.getElementById("frame7").style.display = "block";
+	document.getElementById(id1).style.display = "none";
+	$('html, body').stop().animate({
+		scrollTop: $("#frame7").offset().top
+	}, 200, function(){
+		//Animation complete
+	});
 	$("#frame7").animate({
-		marginTop: "-=10%",
+		marginTop: "-=5%",
 		opacity: 1
 	}, 500, function() {
-		$('html, body').stop().animate({
-			scrollTop: $("#frame7").offset().top
-		}, 1000, function(){
-			//Animation complete
-		});
 	});
 	$(id2).animate({
 		opacity: 0,
 		marginTop: "-=5%",
 		marginLeft: varLeft
 	}, 500, function(){
-		document.getElementById(id1).style.display = "none";
-		document.getElementById(id1).style.marginTop = "12%";
+		document.getElementById(id1).style.marginTop = "42%";
 		if(id1=="frame4") {
 			document.getElementById(id1).style.marginLeft = "3%";
 		};
 		if (id1=="frame5") {			
-			document.getElementById(id1).style.marginLeft = "30%";
+			document.getElementById(id1).style.marginLeft = "10%";
 		};
 		if (id1=="frame6") {			
-			document.getElementById(id1).style.marginLeft = "60%";
+			document.getElementById(id1).style.marginLeft = "20%";
 		};
 	});
 };
@@ -107,7 +107,7 @@ hideConclusion = function(id1, id2, varLeft){
 	}, 500, function() {
 		document.getElementById("frame7").style.display = "none";
 		document.getElementById("frame7").style.marginTop = "20%";
-		document.getElementById("frame7").style.marginLeft = "12%";
+		document.getElementById("frame7").style.marginLeft = "9%";
 	});
 };
 
@@ -227,19 +227,19 @@ $("#frame6to7").click(function(){
 
 //return to frame 4
 $("#return_frame4").click(function() {
-	reinitializeFrame("frame4", "2%", "3%");
+	reinitializeFrame("frame4", "42%", "3%");
 	hideConclusion("frame4", "#frame4", "+=10%");
 });
 
 //return to frame 5
 $("#return_frame5").click(function() {
-	reinitializeFrame("frame5", "2%", "12%");
+	reinitializeFrame("frame5", "42%", "10%");
 	hideConclusion("frame5", "#frame5", "+=0%");
 
 });
 
 //return to frame 6
 $("#return_frame6").click(function() {
-	reinitializeFrame("frame6", "2%", "22%");
+	reinitializeFrame("frame6", "42%", "20%");
 	hideConclusion("frame6", "#frame6", "-=10%");
 });

@@ -41,7 +41,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 25px;
 	margin-bottom: 40px;
 	color: white;
 	text-align: center;
@@ -55,21 +55,23 @@ body {
 }
 
 #outils {
-	margin-left: -10%;
+	margin-left: -12%;
 	margin-top: 7%;
-	margin-right: -2%;
 }
 
 #sous-debats {
-	margin-left: -14%;
+	margin-left: -16%;
 	margin-top: 7%;
-	margin-right: -2%;
 }
 
 .button {
 	display: inline-block;
 	vertical-align: top;
 	cursor: pointer;
+}
+
+.button p {
+	margin-top: 50%;
 }
 
 .frame {
@@ -87,13 +89,14 @@ body {
 }
 
 .frame p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
 #spicynodesViewer {
-	margin-left: 10%;
+	width: 90%;
+	height: 550px;
 }
 
 #arbre-title {
@@ -103,7 +106,8 @@ body {
 }
 
 #arbre-banniere {
-	margin-left: 2%;
+	margin-left: -17%;
+	width: 125%;
 }
 
 #frame2 {
@@ -117,7 +121,8 @@ body {
 }
 
 #frise-banniere {
-	margin-left: 2%;
+	margin-left: -13.2%;
+	width: 125%;
 }
 
 
@@ -132,7 +137,8 @@ body {
 }
 
 #carte-banniere {
-	margin-left: 2%;
+	margin-left: -13.2%;
+	width: 125%;
 }
 
 #carte {
@@ -150,7 +156,8 @@ body {
 }
 
 #donnees-banniere {
-	margin-left: 2%;
+	margin-left: -17%;
+	width: 125%;
 }
 
 #donnees-image {
@@ -158,6 +165,7 @@ body {
 	width: 90%;
 	margin-left: 4%;
 	height: 300px;
+	margin-bottom: 5%;
 }
 
 .button p {
@@ -187,6 +195,20 @@ body {
 	margin-bottom: 5%;
 }
 
+#frame4to7-button {
+	margin-left: -45%;
+}
+
+#frame5to7-button {
+	margin-left: -45%;
+}
+
+
+#frame6to7-button {
+	margin-left: -45%;
+}
+
+
 #button_eye5 {
 	margin-left: 48%;
 }
@@ -203,12 +225,16 @@ body {
 	margin-bottom: 5%;
 }
 
+#return_frame4 {
+	margin-left: 8%;
+}
+
 #return_frame5 {
-	margin-left: 40%;
+	margin-left: 30%;
 }
 
 #return_frame6 {
-	margin-left: 40%;
+	margin-left: 30%;
 }
 
 #frame5 {
@@ -223,7 +249,8 @@ body {
 }
 
 #raisons-banniere {
-	margin-left: 2%;
+	margin-left: -13.2%;
+	width: 125%;
 }
 
 #raisons-image {
@@ -231,6 +258,7 @@ body {
 	width: 90%;
 	margin-left: 4%;
 	height: 300px;
+	margin-bottom: 5%;
 }
 
 #frame6 {
@@ -245,7 +273,7 @@ body {
 }
 
 #modalite-banniere {
-	margin-left: -13%;
+	margin-left: -13.2%;
 	width: 125%;
 }
 
@@ -254,6 +282,7 @@ body {
 	width: 90%;
 	margin-left: 4%;
 	height: 300px;
+	margin-bottom: 5%;
 }
 
 #modalite {
@@ -262,13 +291,18 @@ body {
 
 #frame7 {
 	margin-top: 20%;
-	margin-left: 10%;
+	margin-left: 9%;
 }
 
 #conclusion-title {
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.5em;
 	margin-top: -11%;
+	border: 2px solid #55555b;
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
 }
 
 #conclusion-banniere {
@@ -313,4 +347,14 @@ body {
 
 #info:hover {
 	cursor: pointer;
+}
+
+.button p {
+	margin-top: 25%;
+	margin-bottom: 25%;
+}
+
+.title {
+	font-size: 2em;
+	margin-bottom: -30px;
 }
